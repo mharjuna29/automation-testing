@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.5 on win32)" generated="20220704 21:49:01.678" rpa="false" schemaversion="3">
+<suite id="s1" name="contentInfographics" source="D:\Work\Deggan\Automation\automation-testing\SmartChange\contentInfographics.robot">
+<test id="s1-t1" name="Create Content Infographics" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://admin-smartchange.deggan.com/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220704 21:49:01.911" level="INFO">Opening browser 'Chrome' to base url 'https://admin-smartchange.deggan.com/login'.</msg>
+<status status="PASS" starttime="20220704 21:49:01.911" endtime="20220704 21:49:04.904"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220704 21:49:04.905" endtime="20220704 21:49:05.032"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=login-email</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220704 21:49:05.033" endtime="20220704 21:49:05.069"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=login-email</arg>
+<arg>admin@smartchange.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:05.071" level="INFO">Typing text 'admin@smartchange.com' into text field 'id=login-email'.</msg>
+<status status="PASS" starttime="20220704 21:49:05.070" endtime="20220704 21:49:05.208"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=login-password</arg>
+<arg>password</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:05.209" level="INFO">Typing password into text field 'id=login-password'.</msg>
+<msg timestamp="20220704 21:49:05.249" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220704 21:49:05.324" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220704 21:49:05.209" endtime="20220704 21:49:05.324"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(text(),'Log In')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:05.325" level="INFO">Clicking element '//button[contains(text(),'Log In')]'.</msg>
+<status status="PASS" starttime="20220704 21:49:05.325" endtime="20220704 21:49:05.396"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Content')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:05.397" endtime="20220704 21:49:06.605"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Content')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:06.605" level="INFO">Clicking element '//a[contains(text(),'Content')]'.</msg>
+<status status="PASS" starttime="20220704 21:49:06.605" endtime="20220704 21:49:06.678"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>(//a[normalize-space()='Infographics'])[1]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:06.679" endtime="20220704 21:49:06.940"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//a[normalize-space()='Infographics'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:06.941" level="INFO">Clicking element '(//a[normalize-space()='Infographics'])[1]'.</msg>
+<status status="PASS" starttime="20220704 21:49:06.940" endtime="20220704 21:49:06.991"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>(//small[normalize-space()='Add New'])[1]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:06.993" endtime="20220704 21:49:07.475"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//small[normalize-space()='Add New'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:07.477" level="INFO">Clicking element '(//small[normalize-space()='Add New'])[1]'.</msg>
+<status status="PASS" starttime="20220704 21:49:07.476" endtime="20220704 21:49:07.533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__69"]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:07.534" endtime="20220704 21:49:07.771"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__69"]</arg>
+<arg>Create New Content Infographics Using Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:07.772" level="INFO">Typing text 'Create New Content Infographics Using Robot Framework' into text field '//*[@id="__BVID__69"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:07.772" endtime="20220704 21:49:07.991"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>(//input[@placeholder='Tags'])[1]</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:07.993" level="INFO">Typing text 'Testing' into text field '(//input[@placeholder='Tags'])[1]'.</msg>
+<status status="PASS" starttime="20220704 21:49:07.992" endtime="20220704 21:49:08.121"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__74"]</arg>
+<arg>Infographics Caption 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.122" level="INFO">Typing text 'Infographics Caption 1' into text field '//*[@id="__BVID__74"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.121" endtime="20220704 21:49:08.250"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//input[@type='file']</arg>
+<arg>${fileImg}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.251" level="INFO">Sending D:\Work\Deggan\Automation\automation-testing\DummyDocs\lorem-ipsum.png to browser.</msg>
+<status status="PASS" starttime="20220704 21:49:08.250" endtime="20220704 21:49:08.283"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//button[normalize-space()='+ Add New'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.292" level="INFO">Clicking element '(//button[normalize-space()='+ Add New'])[1]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.283" endtime="20220704 21:49:08.360"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__88"]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:08.360" endtime="20220704 21:49:08.392"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__88"]</arg>
+<arg>Infographics Caption 2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.394" level="INFO">Typing text 'Infographics Caption 2' into text field '//*[@id="__BVID__88"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.393" endtime="20220704 21:49:08.523"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>(//input[@type='file'])[2]</arg>
+<arg>${fileImg}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.524" level="INFO">Sending D:\Work\Deggan\Automation\automation-testing\DummyDocs\lorem-ipsum.png to browser.</msg>
+<status status="PASS" starttime="20220704 21:49:08.523" endtime="20220704 21:49:08.560"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//button[normalize-space()='ID'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.561" level="INFO">Clicking element '(//button[normalize-space()='ID'])[1]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.561" endtime="20220704 21:49:08.614"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__77"]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 21:49:08.614" endtime="20220704 21:49:08.637"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__77"]</arg>
+<arg>Membuat Konten Infographics Baru Menggunakan Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.638" level="INFO">Typing text 'Membuat Konten Infographics Baru Menggunakan Robot Framework' into text field '//*[@id="__BVID__77"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.637" endtime="20220704 21:49:08.847"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__80"]</arg>
+<arg>Infographics Caption Satu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.847" level="INFO">Typing text 'Infographics Caption Satu' into text field '//*[@id="__BVID__80"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.847" endtime="20220704 21:49:08.994"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="__BVID__94"]</arg>
+<arg>Infographics Caption Dua</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 21:49:08.995" level="INFO">Typing text 'Infographics Caption Dua' into text field '//*[@id="__BVID__94"]'.</msg>
+<status status="PASS" starttime="20220704 21:49:08.995" endtime="20220704 21:49:09.136"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220704 21:49:12.138" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220704 21:49:09.137" endtime="20220704 21:49:12.138"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220704 21:49:12.138" endtime="20220704 21:49:14.315"/>
+</kw>
+<doc>Create New Content Infographics on Smart Change</doc>
+<status status="PASS" starttime="20220704 21:49:01.910" endtime="20220704 21:49:14.315"/>
+</test>
+<status status="PASS" starttime="20220704 21:49:01.678" endtime="20220704 21:49:14.319"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="contentInfographics">contentInfographics</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
